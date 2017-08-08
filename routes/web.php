@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $people = ['Taylor', 'Matt', 'Jeffrey'];
+    return view('welcome')->withPeople($people);
+});
+
+Route::get('/about', function () {
+    return view('pages.about');
 });
