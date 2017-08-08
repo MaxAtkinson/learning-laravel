@@ -14,6 +14,6 @@ class CardsController extends Controller
     }
 
     public function show(Card $card) {
-        return $card;
+        return view('cards.show')->withCard($card);
     }
 }
