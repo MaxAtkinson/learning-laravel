@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use Log;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
